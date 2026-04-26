@@ -1,6 +1,6 @@
-from strictpy import strict
+from stricty import stricty
 
-@strict
+@stricty
 def add(x: int, y: int) -> int:
     return x + y
 

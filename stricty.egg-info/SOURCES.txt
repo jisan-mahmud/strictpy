@@ -12,6 +12,11 @@ stricty/decorator.py
 stricty/errors.py
 stricty/utils.py
 stricty/validator.py
+stricty.egg-info/PKG-INFO
+stricty.egg-info/SOURCES.txt
+stricty.egg-info/dependency_links.txt
+stricty.egg-info/requires.txt
+stricty.egg-info/top_level.txt
 tests/test_decorator.py
 tests/test_return.py
 tests/test_validator.py
