@@ -80,13 +80,10 @@ No:
 
 ## 📦 Installation
 
-> ⚠️ **Under Development** — Not yet published to PyPI.
+> 🚧 **Under Development** — Published on PyPI.
 
 ```bash
-# Install locally
-git clone https://github.com/yourusername/stricty.git
-cd stricty
-pip install -e .
+pip install stricty
 ```
 
 ---
