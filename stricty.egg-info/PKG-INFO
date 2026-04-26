@@ -1,7 +1,7 @@
 Metadata-Version: 2.4
 Name: stricty
-Version: 0.1.0
-Summary: strictpy runtime type enforcement for Python — no coercion, no surprises.
+Version: 1.0.0
+Summary: stricty runtime type enforcement for Python — no coercion, no surprises.
 Author: Jisan Mahmud
 License: MIT License
         
@@ -65,7 +65,7 @@ add("1", 2)  # ❌ No error by default
 Stricty enforces **fail-fast behavior**:
 
 ```python
-from strictpy import strict
+from stricty import strict
 
 @strict
 def add(x: int, y: int) -> int:
@@ -115,7 +115,7 @@ No:
 ## 📦 Installation
 
 ```bash
-pip install strictpy
+pip install stricty
 ```
 
 ---
@@ -123,7 +123,7 @@ pip install strictpy
 ## 📂 Project Structure
 
 ```
-strictpy/
+stricty/
 ├── decorator.py
 ├── validator.py
 ├── errors.py
