@@ -80,8 +80,13 @@ No:
 
 ## 📦 Installation
 
+> ⚠️ **Under Development** — Not yet published to PyPI.
+
 ```bash
-pip install strictpy
+# Install locally
+git clone https://github.com/yourusername/strictpy.git
+cd strictpy
+pip install -e .
 ```
 
 ---
