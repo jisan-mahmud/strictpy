@@ -1,0 +1,2 @@
+class StrictTypeError(TypeError):
+    pass
