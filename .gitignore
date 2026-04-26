@@ -1,1 +1,3 @@
 .venv
+strictpy.egg-info
+dist
