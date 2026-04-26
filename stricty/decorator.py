@@ -2,11 +2,11 @@ from functools import wraps
 from inspect import signature
 
 
-class StrictTypeError(TypeError):
+class strictyTypeError(TypeError):
     pass
 
 
-def strict(func):
+def stricty(func):
     sig = signature(func)
     annotations = func.__annotations__
 
@@ -21,7 +21,7 @@ def strict(func):
                 expected = annotations[name]
 
                 if type(value) is not expected:
-                    raise StrictTypeError(
+                    raise strictyTypeError(
                         f"Argument '{name}' expected {expected.__name__}, "
                         f"got {type(value).__name__} ({value})"
                     )
@@ -32,7 +32,7 @@ def strict(func):
         return_type = annotations.get("return")
         if return_type is not None:
             if type(result) is not return_type:
-                raise StrictTypeError(
+                raise strictyTypeError(
                     f"Return value expected {return_type.__name__}, "
                     f"got {type(result).__name__} ({result})"
                 )

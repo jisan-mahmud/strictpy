@@ -1,8 +1,8 @@
-# 🚀 StrictPy
+# 🚀 Stricty
 
 > Strict runtime type enforcement for Python — no coercion, no surprises.
 
-StrictPy makes Python behave more like C/C++ when it comes to type safety.
+Stricty makes Python behave more like C/C++ when it comes to type safety.
 It enforces **exact type matching** for function arguments and return values at runtime.
 
 ---
@@ -17,7 +17,7 @@ It enforces **exact type matching** for function arguments and return values at 
 
 ---
 
-## 🔥 Why StrictPy?
+## 🔥 Why Stricty?
 
 Python is dynamically typed:
 
@@ -28,10 +28,10 @@ def add(x: int, y: int):
 add("1", 2)  # ❌ No error by default
 ```
 
-StrictPy enforces **fail-fast behavior**:
+Stricty enforces **fail-fast behavior**:
 
 ```python
-from strictpy import strict
+from stricty import strict
 
 @strict
 def add(x: int, y: int) -> int:
@@ -55,7 +55,7 @@ def get_number() -> int:
 
 ## ⚠️ Philosophy
 
-StrictPy follows a simple rule:
+Stricty follows a simple rule:
 
 > "Wrong type? Fail immediately."
 
@@ -69,7 +69,7 @@ No:
 
 ## 🆚 Comparison
 
-| Feature              | StrictPy | Pydantic  | mypy |
+| Feature              | Stricty | Pydantic  | mypy |
 | -------------------- | -------- | --------- | ---- |
 | Runtime validation   | ✅        | ✅         | ❌    |
 | Strict (no coercion) | ✅        | ❌         | ✅    |
@@ -84,8 +84,8 @@ No:
 
 ```bash
 # Install locally
-git clone https://github.com/yourusername/strictpy.git
-cd strictpy
+git clone https://github.com/yourusername/stricty.git
+cd stricty
 pip install -e .
 ```
 
@@ -94,7 +94,7 @@ pip install -e .
 ## 📂 Project Structure
 
 ```
-strictpy/
+stricty/
 ├── decorator.py
 ├── validator.py
 ├── errors.py
@@ -148,4 +148,4 @@ Backend-focused developer building reliable and predictable systems.
 
 ## ⭐ Final Thought
 
-> Python is flexible. StrictPy makes it predictable.
+> Python is flexible. Stricty makes it predictable.
