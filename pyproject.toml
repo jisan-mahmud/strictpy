@@ -1,7 +1,7 @@
 [project]
 name = "stricty"
-version = "0.1.0"
-description = "strictpy runtime type enforcement for Python — no coercion, no surprises."
+version = "1.0.0"
+description = "stricty runtime type enforcement for Python — no coercion, no surprises."
 readme = "README.md"
 requires-python = ">=3.9"
 license = { file = "LICENSE" }

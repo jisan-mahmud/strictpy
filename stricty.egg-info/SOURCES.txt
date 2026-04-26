@@ -1,11 +1,6 @@
 LICENSE
 README.md
 pyproject.toml
-strictpy.egg-info/PKG-INFO
-strictpy.egg-info/SOURCES.txt
-strictpy.egg-info/dependency_links.txt
-strictpy.egg-info/requires.txt
-strictpy.egg-info/top_level.txt
 stricty/__init__.py
 stricty/config.py
 stricty/decorator.py

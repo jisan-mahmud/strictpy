@@ -31,7 +31,7 @@ add("1", 2)  # ❌ No error by default
 Stricty enforces **fail-fast behavior**:
 
 ```python
-from strictpy import strict
+from stricty import strict
 
 @strict
 def add(x: int, y: int) -> int:
@@ -80,13 +80,10 @@ No:
 
 ## 📦 Installation
 
-> ⚠️ **Under Development** — Not yet published to PyPI.
+> 🚧 **Under Development** — Published on PyPI.
 
 ```bash
-# Install locally
-git clone https://github.com/yourusername/strictpy.git
-cd strictpy
-pip install -e .
+pip install stricty
 ```
 
 ---
@@ -94,7 +91,7 @@ pip install -e .
 ## 📂 Project Structure
 
 ```
-strictpy/
+stricty/
 ├── decorator.py
 ├── validator.py
 ├── errors.py
