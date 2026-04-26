@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+strictpy/__init__.py
+strictpy/config.py
+strictpy/decorator.py
+strictpy/errors.py
+strictpy/utils.py
+strictpy/validator.py
+strictpy.egg-info/PKG-INFO
+strictpy.egg-info/SOURCES.txt
+strictpy.egg-info/dependency_links.txt
+strictpy.egg-info/requires.txt
+strictpy.egg-info/top_level.txt
+tests/test_decorator.py
+tests/test_return.py
+tests/test_validator.py

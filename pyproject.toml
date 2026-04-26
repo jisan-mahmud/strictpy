@@ -1,0 +1,23 @@
+[project]
+name = "strictpy"
+version = "0.1.0"
+description = "Strict runtime type enforcement for Python — no coercion, no surprises."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+
+authors = [
+  { name = "Jisan Mahmud" }
+]
+
+keywords = ["typing", "validation", "runtime", "strict", "type-checking"]
+
+dependencies = [
+    "pytest>=8.4.2",
+    "ruff>=0.15.12",
+]
+
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"

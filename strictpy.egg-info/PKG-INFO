@@ -1,0 +1,180 @@
+Metadata-Version: 2.4
+Name: strictpy
+Version: 0.1.0
+Summary: Strict runtime type enforcement for Python — no coercion, no surprises.
+Author: Jisan Mahmud
+License: MIT License
+        
+        Copyright (c) 2026 Jisan Mahmud
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Keywords: typing,validation,runtime,strict,type-checking
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pytest>=8.4.2
+Requires-Dist: ruff>=0.15.12
+Dynamic: license-file
+
+# 🚀 StrictPy
+
+> Strict runtime type enforcement for Python — no coercion, no surprises.
+
+StrictPy makes Python behave more like C/C++ when it comes to type safety.
+It enforces **exact type matching** for function arguments and return values at runtime.
+
+---
+
+## ✨ Features
+
+* ✅ Strict function argument validation
+* ✅ Return type enforcement
+* ❌ No implicit type conversion
+* ⚡ Lightweight and fast
+* 🧠 Clear, developer-friendly error messages
+
+---
+
+## 🔥 Why StrictPy?
+
+Python is dynamically typed:
+
+```python
+def add(x: int, y: int):
+    return x + y
+
+add("1", 2)  # ❌ No error by default
+```
+
+StrictPy enforces **fail-fast behavior**:
+
+```python
+from strictpy import strict
+
+@strict
+def add(x: int, y: int) -> int:
+    return x + y
+
+add(1, 2)        # ✅ 3
+add("1", 2)      # ❌ StrictTypeError
+```
+
+---
+
+## 🧪 Return Type Enforcement
+
+```python
+@strict
+def get_number() -> int:
+    return "10"   # ❌ Error
+```
+
+---
+
+## ⚠️ Philosophy
+
+StrictPy follows a simple rule:
+
+> "Wrong type? Fail immediately."
+
+No:
+
+* silent conversions
+* hidden bugs
+* unexpected behavior
+
+---
+
+## 🆚 Comparison
+
+| Feature              | StrictPy | Pydantic  | mypy |
+| -------------------- | -------- | --------- | ---- |
+| Runtime validation   | ✅        | ✅         | ❌    |
+| Strict (no coercion) | ✅        | ❌         | ✅    |
+| Return enforcement   | ✅        | ⚠️ manual | ❌    |
+| Lightweight          | ✅        | ❌         | ✅    |
+
+---
+
+## 📦 Installation
+
+```bash
+pip install strictpy
+```
+
+---
+
+## 📂 Project Structure
+
+```
+strictpy/
+├── decorator.py
+├── validator.py
+├── errors.py
+```
+
+---
+
+## 🚀 Roadmap
+
+### v1
+
+* [x] Argument validation
+* [x] Return validation
+* [x] Custom errors
+
+### v2
+
+* [ ] Support for List, Dict, Optional
+* [ ] Better error messages
+* [ ] Config system
+
+### v3
+
+* [ ] Django / API integration
+* [ ] Performance optimizations
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repo
+2. Create a new branch
+3. Make changes
+4. Submit a PR
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 💡 Author
+
+Backend-focused developer building reliable and predictable systems.
+
+---
+
+## ⭐ Final Thought
+
+> Python is flexible. StrictPy makes it predictable.
